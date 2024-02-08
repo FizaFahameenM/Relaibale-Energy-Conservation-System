@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inspect</title>
+    <style>
+        /* body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("/static/spot2.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+
+        .form-container {
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+        }
+        
+        .submit-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .submit-button:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>EnergyIntel</h2>
+        <form action="/inspect" method="post">
+            <label for="input1">GlobalReactivePower:</label>
+            <input type="text" id="input1" name="input1"><br><br>
+
+            <label for="input2">Global_intensity:</label>
+            <input type="text" id="input2" name="input2"><br><br>
+
+            <label for="input3">Sub_metering_1:</label>
+            <input type="text" id="input3" name="input3"><br><br>
+
+            <label for="input4">Sub_metering_2:</label>
+            <input type="text" id="input4" name="input4"><br><br>
+
+            <label for="input5">Sub_metering_3:</label>
+            <input type="text" id="input5" name="input5"><br><br>
+
+            <input class="submit-button" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
